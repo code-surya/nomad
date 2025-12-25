@@ -1,0 +1,12 @@
+# Example of how to use the setup script:
+# 
+# 1. Download your Firebase service account key as nomad-key.json
+# 2. Move it to a safe location (like your Downloads folder)
+# 3. Run this command:
+#
+# node setup_firebase.js ~/Downloads/nomad-key.json
+#
+# 4. The script will automatically update your .env file
+# 5. Start your server: npm start
+#
+# SECURITY: After setup, you can delete the nomad-key.json file

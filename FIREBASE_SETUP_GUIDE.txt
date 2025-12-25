@@ -1,0 +1,14 @@
+To use Firebase credentials:
+
+1. Download your service account JSON file from Firebase Console
+2. Save it somewhere safe (NOT in your project folder)
+3. Copy the values from the JSON file into your .env file
+4. Delete or securely store the JSON file (never commit it to git)
+
+Your .env file should look like this:
+FIREBASE_PROJECT_ID=nomad
+FIREBASE_PRIVATE_KEY_ID=your-key-id-here
+FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nyour-key-here\n-----END PRIVATE KEY-----\n"
+FIREBASE_CLIENT_EMAIL=firebase-adminsdk-xxxxx@nomad-xxxxx.iam.gserviceaccount.com
+
+And so on for all the values...

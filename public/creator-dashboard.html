@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad - Creator Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <h1>Nomad - Task Creator</h1>
+            <div class="user-info">
+                <span id="user-email"></span>
+                <button id="logout-btn" class="btn btn-secondary">Logout</button>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <div class="dashboard-actions">
+                <a href="create-task.html" class="btn btn-primary">Create New Task</a>
+            </div>
+
+            <div class="tasks-section">
+                <h2>Your Tasks</h2>
+                <div id="error-message" class="error-message"></div>
+                <div id="tasks-list" class="tasks-list">
+                    <!-- Tasks will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/creator-dashboard.js"></script>
+</body>
+</html>
