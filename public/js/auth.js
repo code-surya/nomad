@@ -1,6 +1,6 @@
 // Authentication utility functions
 
-const API_BASE_URL = 'https://nomad-production-e24e.up.railway.app;
+const API_BASE_URL = 'https://nomad-production-e24e.up.railway.app';
 
 // Store token in localStorage
 function setToken(token) {
