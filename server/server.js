@@ -8,6 +8,16 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const path = require('path');
 require('dotenv').config();
+import cors from "cors";
+
+app.use(cors({
+  origin: "https://nomad-production-4d66.up.railway.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}));
+
+app.options("*", cors());
 
 // Initialize Firebase Admin SDK (skip if credentials are dummy)
 let db = null;
